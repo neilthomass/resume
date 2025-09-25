@@ -1,6 +1,6 @@
 # Custom Resume Format
 
-This is my custom resume format built with LaTeX, designed for clean, professional presentation with ATS-friendly formatting. Also it looks cool.
+This is Neil Thomas' custom resume format built with LaTeX, designed for clean, professional presentation with ATS-friendly formatting. 
 
 ## Features
 
