@@ -12,4 +12,4 @@ This is my custom resume format built with LaTeX, designed for clean, profession
 
 ## Resume Preview
 
-![Resume Preview](resume.pdf)
+![Resume Preview](resume.png)
