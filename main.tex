@@ -1,0 +1,204 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Neil Thomas
+% Based on: https://github.com/sb2nov/resume
+% https://github.com/jakegut/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{lmodern}
+\usepackage{fancyhdr}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+
+
+\usepackage{marvosym}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage[colorlinks=true,
+            urlcolor=myblue,
+            linkcolor=black,
+            citecolor=black]{hyperref}
+
+\pagecolor{white}
+\definecolor{myblue}{HTML}{3399FF}
+
+
+%----------FONT OPTIONS----------
+% (commented out alternates)
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\usepackage[letterpaper, top=0.6in, bottom=0.6in, left=0.3in, right=0.3in]{geometry}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\bfseries\scshape\raggedright\small
+}{}{0em}{}[\vspace{-7pt}\color{black}\rule{\linewidth}{0.7pt}\vspace{-7pt}]
+
+
+
+% Ensure ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\educationSection}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textit{\small #4} \\[-2pt]
+      {\small #3} & {\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small #1} & \textit{\small #4} \\[-2pt]
+      \textbf{\small #3} & {\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\normalsize$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\vspace*{-1.5cm}
+\begin{center}
+    \textbf{\LARGE \scshape Leonardo da Vinci} \\ \vspace{4pt}
+    \small \href{mailto:leonardo@renaissance.it}{+39 555 123 4567} $|$
+    \href{mailto:leonardo@renaissance.it}{leonardo@renaissance.it} $|$
+    \href{https://linkedin.com/in/leodavinci}{\underline{linkedin.com/in/leodavinci}} $|$
+    \href{https://github.com/leodavinci}{\underline{github.com/leodavinci}} $|$
+    \href{https://leodavinci.art}{\underline{leodavinci.art}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \educationSection
+      {Verrocchio’s Workshop}{1469 -- 1476}
+      {Apprenticeship in Painting, Sculpture, Mechanics, Architecture}{Florence, Italy}
+    \educationSection
+      {Self-Directed Study}{1476 -- 1519}
+      {Anatomy, Geometry, Engineering, Physics, Astronomy, Hydrodynamics}{Florence, Italy}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Court Engineer and Artist}{1482 -- 1499}
+      {Duke Ludovico Sforza}{Milan, Italy}
+      \resumeItemListStart
+        \resumeItem{Designed large-scale fortifications, urban infrastructure, and innovative canal systems while conceptualizing advanced machinery such as tanks, flying devices, and hydraulic engines.}
+        \resumeItem{Painted \href{https://en.wikipedia.org/wiki/The_Last_Supper_(Leonardo)}{\textbf{The Last Supper}}, applying anatomy, mathematics, and optics to create revolutionary perspective and emotional resonance.}
+        \resumeItem{Drafted visionary proposals for Milanese city planning and agriculture that merged architecture, hydraulics, and civic engineering into cohesive blueprints.}
+        \resumeItem{Advised the court on military, architectural, and cultural innovation, elevating Milan’s reputation as a Renaissance capital.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Architect and Military Engineer}{1502 -- 1503}
+      {Cesare Borgia}{Central Italy}
+      \resumeItemListStart
+        \resumeItem{Conducted topographic surveys and created highly accurate maps that fused mathematical projection with artistic rendering.}
+        \resumeItem{Designed advanced siege engines, mobile bridges, and artillery improvements to give Borgia’s forces technological advantages.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Artist and Inventor}{1503 -- 1519}
+      {Independent}{Florence, Milan, Rome, Amboise}
+      \resumeItemListStart
+        \resumeItem{Painted \href{https://en.wikipedia.org/wiki/Mona_Lisa}{\textbf{Mona Lisa}}, pioneering sfumato blending and psychological realism to transform portraiture into a study of human depth.}
+        \resumeItem{Performed dissections of 30+ cadavers, producing anatomical sketches that anticipated modern medical diagrams.}
+        \resumeItem{Invented hydraulic pumps, robotic devices, and flying machines, filling \textbf{13,000+ notebook pages} with designs bridging science and art.}
+        \resumeItem{Worked under patrons such as Pope Leo X and King Francis I, producing works across art, science, engineering, and philosophy.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\vspace{-4mm}
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\href{https://en.wikipedia.org/wiki/Codex_Atlanticus}{\textbf{Codex Atlanticus}} $|$ \emph{Engineering, Mathematics, Physics}}{}
+      \resumeItemListStart
+        \resumeItem{Compiled extensive notebooks on hydraulics, mechanics, aerodynamics, architecture, and weaponry, providing a window into Renaissance scientific inquiry.}
+        \resumeItem{Outlined designs for helicopters, tanks, diving suits, and calculators, centuries ahead of material feasibility.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\href{https://en.wikipedia.org/wiki/Leonardo_da_Vinci\%27s_anatomical_studies}{\textbf{Anatomical Drawings}} $|$ \emph{Biology, Medicine, Illustration}}{}
+      \resumeItemListStart
+        \resumeItem{Dissected cadavers and produced highly accurate sketches of the circulatory system, muscular structure, and skeletal framework.}
+        \resumeItem{Created anatomical illustrations that united observational science with artistic mastery, influencing medicine and art for generations.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\vspace{-4mm}
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages:} Italian, Latin, French \\
+    \textbf{Artistic:} Oil Painting, Fresco, Drawing, Sculpture, Perspective, Sfumato, Chiaroscuro \\
+    \textbf{Engineering:} Hydraulics, Mechanics, Architecture, Optics, Cartography, Anatomy, Astronomy \\
+    \textbf{Inventions:} Flying Machines, War Engines, Hydraulic Pumps, Robotics, Architectural Models \\
+    \textbf{Tools:} Paintbrush, Chisel, Compass, Caliper, Quill, Notebook \\
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
